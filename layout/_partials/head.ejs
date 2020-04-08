@@ -1,0 +1,21 @@
+<%
+var joinStr = theme.title_join_string
+var title = config.title
+if (page.title) {
+  title = [page.title, title].join(joinStr)
+}
+%>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <link rel="icon" type="image/png" href="<%- url_for(theme.favicon) %>">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <title><%= config.title %></title>
+  <meta name="theme-color" content="<%- theme.color.navbar_bg_color %>">
+  <meta name="description" content="<%= config.description %>">
+  <meta name="author" content="<%= config.author %>">
+  <meta name="keywords" content="<%= config.keywords %>">
+  <link rel="stylesheet" href="/css/main.css" />
+  <link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_9n5xqdrq0nc.css" />
+</head>
